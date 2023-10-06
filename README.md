@@ -15,6 +15,6 @@ https://www.w3schools.com/cssref/default.asp
 https://www.w3schools.com/howto/default.asp
 - check of je html en css volgens de standaarden is
 https://validator.w3.org/
-
 ## Credits
 - ...
+/head
