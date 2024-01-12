@@ -23,7 +23,7 @@
 }
 
 html, body {                      /* geldt voor html en body */
-  background-color: #EEEEEE;    /* achtergrondkleur lichtgrijs */
+  background-color: #757575;    /* achtergrondkleur lichtgrijs */
   color: #ffffff;               /* tekstkleur donkergrijs */
 }  
 
@@ -99,14 +99,14 @@ nav ul li {                     /* <li> die child is van <ul> die op zijn beurt 
 
 nav li a {
   display: block;
-  color: white;
+  color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
 nav li a:hover {
-  background-color: #aaaaaa;
+  background-color: #707070;
 }
 
 nav li a.active {
@@ -123,12 +123,14 @@ nav li a.active {
 .item-plaatje {
   float: left;
   width: 250px;
-  padding-right: 15px; /* zorgt dat plaatje niet tegen tekst komt */
+  /* zorgt dat plaatje niet tegen tekst komt */
+  border: ridge #87ceeb 4px;
 }
 
 .item-tekst {
   float: right;
   width: 450px;
+  padding-left: 15px;
 }
 
 .speler{
@@ -154,8 +156,17 @@ backgroud-size: cover;
 background-position: center;
 }
 
+@keyframes draaien {
+ from {transform: rotate(0deg)}
+  to {transform rotate(360deg)
+    }
 
-
+.item-plaatje{
+  animation-name:draaien;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+  animation-timing-function: 1;
+}
 
 
 /************************* SUBPAGINA *************************/
