@@ -152,20 +152,22 @@ width:100%;
   z-index: -1;
 
   background-image: url(afbeeldingen/voetbal.webp);
-backgroud-size: cover;  
+background-size: cover;  
 background-position: center;
 }
 
-@keyframes draaien {
- from {transform: rotate(0deg)}
-  to {transform rotate(360deg)
-    }
 
-.item-plaatje{
-  animation-name:draaien;
-  animation-duration: 5s;
-  animation-iteration-count: 1;
-  animation-timing-function: 1;
+
+
+.box {
+
+  background-color: rgba(0,0,0,50%);
+  width: fit-content;
+  
+  border-width:  8px;
+  border-color: black;
+  border-style: dotted;
+  border-radius: 6px;
 }
 
 
